@@ -1,0 +1,3 @@
+base_url: https://dsalazar.cl
+path: /shipping/api/events/jenkins/job
+description: Test run of my custom Jenkins job
