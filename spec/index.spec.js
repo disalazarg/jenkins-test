@@ -9,4 +9,11 @@ describe( 'jenkins-test', () => {
     expect( lib.run ).toBeDefined()
     expect( lib.run ).toBeInstanceOf( Function )
   })
+
+  it( 'can be run', async () => {
+    let result = await lib.run()
+
+    expect( result ).toBeInstanceOf( Object )
+    expect( result.name ).toEqual( 'jenkins-test' )
+  })
 })
